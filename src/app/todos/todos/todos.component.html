@@ -1,7 +1,6 @@
 <app-todo-input (todoCreated)="onTodoCreated($event)"></app-todo-input>
 
-<ng-template #loading>Loading...</ng-template>
-<ul *ngIf="!(isLoading$ | async); else loading">
+<ul>
   <li *ngFor="let todo of (todos$ | async)">
     <app-todo-list-item [todo]="todo" (completed)="onTodoCompletionToggled(todo.id, $event)" (remove)="onRemoveTodo(todo.id)"></app-todo-list-item>
   </li>

@@ -4,7 +4,6 @@ import { TodosComponent } from './todos/todos.component';
 import { RouterModule } from '@angular/router';
 import { TodoInputComponent } from './todos/todo-input/todo-input.component';
 import { TodoListItemComponent } from './todos/todo-list-item/todo-list-item.component';
-import { TodoListComponent } from './todos/todo-list/todo-list.component';
 
 const routes = [
   { path: '', component: TodosComponent },
@@ -12,6 +11,6 @@ const routes = [
 
 @NgModule({
   imports: [ CommonModule, RouterModule.forChild(routes) ],
-  declarations: [ TodosComponent, TodoInputComponent, TodoListItemComponent, TodoListComponent ]
+  declarations: [ TodosComponent, TodoInputComponent, TodoListItemComponent ]
 })
 export class TodosModule { }

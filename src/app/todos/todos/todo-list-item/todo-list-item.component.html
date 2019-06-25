@@ -1,2 +1,3 @@
-<p class="content" [class.complete]="todo.complete">{{ todo.content }}</p>
 <input type="checkbox" [checked]="todo.complete" (click)="toggleTodoComplete()" />
+<p class="content" [class.complete]="todo.complete">{{ todo.content }}</p>
+<button class="delete" (click)="deleteTodo()">🗑️</button>

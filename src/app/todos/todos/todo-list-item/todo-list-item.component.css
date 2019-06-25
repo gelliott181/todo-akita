@@ -12,7 +12,7 @@
 }
 
 .content {
-  margin: 0;
+  margin: 0 0.5rem;
   padding: 0;
 
   flex-grow: 1;
@@ -24,4 +24,20 @@
 
 .complete {
   text-decoration: line-through;
+}
+
+.delete {
+  border: none;
+  background: none;
+  
+  font-size: 1.5rem;
+  flex-grow: 0;
+}
+
+.delete:hover {
+  transform: scale(1.05);
+}
+
+.delete:active {
+  transform: scale(0.95);
 }
