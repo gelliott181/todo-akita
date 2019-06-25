@@ -1,0 +1,2 @@
+<p class="content" [class.complete]="todo.complete">{{ todo.content }}</p>
+<input type="checkbox" [checked]="todo.complete" (click)="toggleTodoComplete()" />

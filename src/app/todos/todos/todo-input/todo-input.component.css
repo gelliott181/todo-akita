@@ -1,0 +1,21 @@
+:host {
+  padding: 1rem;
+  margin: 0.5rem;
+
+  background: #FAFAFA;
+  box-shadow: 0 1px 2px -1px #323232;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+}
+
+input {
+  flex-grow: 1;
+  margin-right: 0.5rem;
+}

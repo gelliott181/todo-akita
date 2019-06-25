@@ -1,0 +1,4 @@
+<form (submit)="onAddTodo($event)">
+  <input type="text" [value]="todoContent" (input)="todoContent = $event.target.value" />
+  <button type="submit">Add</button>
+</form>
